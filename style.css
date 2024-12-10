@@ -1,0 +1,163 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav section aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    margin: 20px;
+    background-color:#ffffff;
+}
+
+header {
+    grid-area: header;
+    background-color: #56642a;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    text-align: middle;
+}
+
+#logo-image {
+    float: middle;
+    margin: 5px;
+    height: 170px;
+    width: 170px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #849531;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 70px;
+}
+
+section {
+    grid-area: section;
+    background-color: #849531;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+
+section header {
+    background-color: #849531;
+    padding: 10px;
+    text-align: middle;
+    grid-column:span 2;
+    grid-row: 1;
+}
+
+article {
+    background-color: #849531;
+    padding: 10px;
+    grid-column:span 2;
+    grid-row: 2;
+    color: #ffffff;
+    text-align: center;
+}
+
+#employee1-image {
+    float: left;
+    margin: 5px;
+    height: 250px;
+    width: 175px;
+}
+
+#employee2-image {
+    float: left;
+    margin: 5px;
+    height: 160px;
+    width: 220px;
+}
+
+#employee3-image {
+    float: bottom;
+    margin: 5px;
+    height: 300px;
+    width: 210px;
+}
+
+#sneaker-image {
+    float: bottom;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+#hiking-image {
+    float: bottom;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+#shoe-image {
+    float: bottom;
+    margin: 5px;
+    height: 200px;
+    width: 300px;
+}
+
+#boot-image {
+    float: bottom;
+    margin: 5px;
+    height: 200px;
+    width: 300px;
+}
+
+section footer {
+    background-color: #849531;
+    padding: 10px;
+    text-align: center;
+    grid-column:span 2;
+    grid-row: 3;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #849531;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#intro-image {
+    float: right;
+    margin: 5px;
+    height: 300px;
+    width: 530px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #56642a;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer-image {
+    height: 50px;
+    width: 50px;
+} 	
